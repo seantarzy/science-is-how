@@ -1,6 +1,8 @@
+import { Fade } from "react-awesome-reveal";
 import Button from "../../../shared/components/Button";
 import { StickFigure } from "../components/StickFigure/StickFigure";
 import { FC, useEffect, useState } from "react";
+import { OUTLET_FADE_DURATION } from "../../shared/components/BaseLayout";
 
 function BeardedBarber({ ...props }) {
   return (
@@ -315,7 +317,9 @@ export default function BarberExample() {
             </Button>
             )}
           </div>
+          <Fade duration={OUTLET_FADE_DURATION + 1000}>
         <div className="">{miniSteps[currentMiniStep]({})}</div>
+          </Fade>
         <div className="align-middle self-center">
             <Button
               onClick={() => setCurrentMiniStep(currentMiniStep + 1)}

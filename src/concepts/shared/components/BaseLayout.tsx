@@ -1,9 +1,12 @@
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import Button from "../../../shared/components/Button";
 import "./BaseLayout.css";
+import { Fade } from "react-awesome-reveal";
 const stepLengthMap: Record<string, number> = {
   "russels-paradox": 5,
 };
+
+export const OUTLET_FADE_DURATION = 2000;
 
 const BaseLayout = ({ concept }: { concept: string }) => {
   const navigate = useNavigate();
@@ -37,7 +40,9 @@ const BaseLayout = ({ concept }: { concept: string }) => {
       </div>
     <div className="mt-4 flex flex-col gap-8 items-center h-full min-h-[100vh] text-center">
       <div className="h-64 md:min-h-[450px] md:max-h-700px flex flex-col w-full mt-16">
+        <Fade duration={OUTLET_FADE_DURATION} key={`${concept}--${step}`}>
         <Outlet />
+        </Fade>
       </div>
       <div className="mt-24 flex gap-16 justify-between items-center w-full">
         <div className="">

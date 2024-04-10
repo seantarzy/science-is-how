@@ -44,6 +44,10 @@ export default function Home() {
       </div>
     <div className="mb-12"
     >
+      <Fade
+        duration={4500}
+      >
+
       <Button
         onClick={() => {
           window.location.href = "/russels-paradox";
@@ -51,6 +55,8 @@ export default function Home() {
       >
         <span>Russel's Paradox</span>
       </Button>
+
+      </Fade>
 
     </div>
     </div>
