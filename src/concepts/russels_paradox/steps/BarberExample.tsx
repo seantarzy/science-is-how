@@ -28,7 +28,7 @@ function BeardedManOneApproaches() {
       <StickFigure beard={true} size={0.8} />
       <StickFigure
         beard={true}
-        size={0.6}
+        size={0.75}
         speakBubble="Hey, I don't shave myself and I could use a shave."
       />
     </div>
@@ -41,12 +41,12 @@ function BeardedManTwoApproaches() {
       <StickFigure beard={true} size={0.8} />
       <StickFigure
         beard={true}
-        size={0.6}
+        size={0.75}
         speakBubble="Hey, I don't shave myself and I could use a shave."
       />
       <StickFigure
         beard={true}
-        size={0.6}
+        size={0.75}
         speakBubble="Hey, I ALSO don't shave myself and I could use a shave."
       />
     </div>
@@ -62,8 +62,8 @@ function BarberShavesTheMenOne() {
         razer={true}
         speakBubble="I'm going to shave you both now. That's the rule."
       />
-      <StickFigure beard={true} size={0.6} speakBubble="" />
-      <StickFigure beard={true} size={0.6} speakBubble="" />
+      <StickFigure beard={true} size={0.75} speakBubble="" />
+      <StickFigure beard={true} size={0.75} speakBubble="" />
     </div>
   );
 }
@@ -72,8 +72,8 @@ function BarberShavesTheMenTwo() {
   return (
     <div className="flex justify-center">
       <StickFigure beard={true} size={0.8} razer={true} speakBubble="BUZZZZ" />
-      <StickFigure beard={false} size={0.6} speakBubble="" />
-      <StickFigure beard={true} size={0.6} speakBubble="" />
+      <StickFigure beard={false} size={0.75} speakBubble="" />
+      <StickFigure beard={true} size={0.75} speakBubble="" />
     </div>
   );
 }
@@ -82,8 +82,8 @@ function BarberShavesTheMenThree() {
   return (
     <div className="flex justify-center">
       <BeardedBarber size={0.8} razer={true} speakBubble="And BUZZZZ" />
-      <StickFigure beard={false} size={0.6} speakBubble="" />
-      <StickFigure beard={false} size={0.6} speakBubble="" />
+      <StickFigure beard={false} size={0.75} speakBubble="" />
+      <StickFigure beard={false} size={0.75} speakBubble="" />
     </div>
   );
 }
@@ -298,7 +298,7 @@ export default function BarberExample() {
 
   return (
     <div className="w-full">
-      <h1>The Barber Example</h1>
+      <h1 className="font-bold">The Barber Example</h1>
       <p>
         Consider a village with a single barber. The barber shaves all those,
         and only those, who do not shave themselves.
@@ -311,7 +311,7 @@ export default function BarberExample() {
               onClick={() => setCurrentMiniStep(currentMiniStep - 1)}
               hideIcon={true}
             >
-              Back
+              Previous
             </Button>
             )}
           </div>

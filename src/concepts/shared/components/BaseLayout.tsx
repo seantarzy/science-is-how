@@ -2,7 +2,7 @@ import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import Button from "../../../shared/components/Button";
 import "./BaseLayout.css";
 const stepLengthMap: Record<string, number> = {
-  "russels-paradox": 4,
+  "russels-paradox": 5,
 };
 
 const BaseLayout = ({ concept }: { concept: string }) => {
@@ -25,6 +25,9 @@ const BaseLayout = ({ concept }: { concept: string }) => {
     if (step > 1) {
       navigate(`/${conceptPath}/${step - 1}`);
     }
+    else if (step === 1) {
+      navigate(`/${conceptPath}`);
+    }
   };
 
   return (
@@ -33,10 +36,10 @@ const BaseLayout = ({ concept }: { concept: string }) => {
       <h1>{concept}</h1>
       </div>
     <div className="mt-4 flex flex-col gap-8 items-center h-full min-h-[100vh] text-center">
-      <div className="h-64 md:min-h-[600px] md:max-h-700px flex flex-col justify-center w-full">
+      <div className="h-64 md:min-h-[450px] md:max-h-700px flex flex-col w-full mt-16">
         <Outlet />
       </div>
-      <div className="mt-16 flex gap-16 justify-between items-center w-full">
+      <div className="mt-24 flex gap-16 justify-between items-center w-full">
         <div className="">
           {step > 0 && <Button onClick={prevStep}>Back</Button>}
         </div>

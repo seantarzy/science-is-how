@@ -1,7 +1,6 @@
 import "./StickFigure.css";
 
 
-
 function SpeakBubble({speakBubble}: {speakBubble: string}) {
 
   return <div>

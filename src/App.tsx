@@ -9,6 +9,7 @@ import {
 import { RusselsParadox } from "./concepts/russels_paradox";
 import Home from "./basic/components/Home";
 import About from "./basic/components/About";
+import TheSetParadox from "./concepts/russels_paradox/steps/TheSetParadox";
 export default function App() {
   return (
     <Router>
@@ -23,7 +24,8 @@ export default function App() {
           <Route path="1" element={<SetsBasic />} />
           <Route path="2" element={<SelfContainingSets />} />
           <Route path="3" element={<NonSelfContainingSets />} />
-          <Route path="4" element={<BarberExample />} />
+          <Route path="4" element = {<TheSetParadox/>} />
+          <Route path="5" element={<BarberExample />} />
         </Route>
       </Routes>
     </Router>

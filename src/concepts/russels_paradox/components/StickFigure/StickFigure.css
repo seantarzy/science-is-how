@@ -189,14 +189,14 @@ p.thought:after {
 }
 
 .razer {
-  width: 20px; /* Razor width */
-  height: 10px; /* Razor height */
-  background-color: gray; /* Razor color */
+  width: 20px; 
+  height: 10px; 
+  background-color: gray;
   position: absolute;
-  bottom: -5px; /* Positioning the razor at the bottom of the hand */
-  right: -10px; /* Adjust based on where you want the razor to appear */
-  border: 2px solid black; /* Razor outline */
-  border-radius: 2px; /* Slight rounding at the edges */
+  bottom: -5px;
+  right: -10px; 
+  border: 2px solid black; 
+  border-radius: 2px;
 }
 
 
