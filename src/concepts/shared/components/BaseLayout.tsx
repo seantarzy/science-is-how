@@ -34,12 +34,12 @@ const BaseLayout = ({ concept }: { concept: string }) => {
   };
 
   return (
-    <div className="w-[90%] ">
+    <div className="w-[90%]">
       <div className="flex justify-center mt-4">
       <h1>{concept}</h1>
       </div>
     <div className="mt-4 flex flex-col gap-8 items-center h-full min-h-[100vh] text-center">
-      <div className="h-64 md:min-h-[450px] md:max-h-700px flex flex-col w-full mt-16">
+      <div className="h-96 md:min-h-[450px] md:max-h-700px flex flex-col w-full mt-16 overflow-scroll md:overflow-auto">
         <Fade duration={OUTLET_FADE_DURATION} key={`${concept}--${step}`}>
         <Outlet />
         </Fade>

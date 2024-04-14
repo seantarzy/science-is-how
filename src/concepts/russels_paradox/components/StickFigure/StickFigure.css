@@ -230,3 +230,60 @@ p.thought:after {
   left: 178px;
   transform: rotate(-8deg);
 }
+
+@media (prefers-color-scheme: dark) {
+  .head {
+    background-color: #f9f9f9;
+    border-color: #646cff;
+  }
+  .beard {
+    background-color: #f9f9f9;
+    border-color: #646cff;
+  }
+  .torso {
+    border-color: #646cff;
+  }
+  .leftleg {
+    border-color: #646cff;
+  }
+  .rightleg {
+    border-color: #646cff;
+  }
+  .leftarm {
+    border-color: #646cff;
+  }
+  .rightarm {
+    border-color: #646cff;
+  }
+  .leftfoot {
+    border-color: #646cff;
+  }
+  .rightfoot {
+    border-color: #646cff;
+  }
+  .razer {
+    background-color: #646cff;
+  }
+
+
+}
+
+@media screen and (max-width: 750px){
+.wrapper {
+  width: 150px;
+  height: 200px;
+  display: block;
+  position: relative;
+  
+}
+
+
+
+  .bubble-wrapper {
+    margin-left: 150px;
+    margin-top: -125px;
+  }
+  p.bubble{
+    font-size: 1.2rem;
+  }
+}

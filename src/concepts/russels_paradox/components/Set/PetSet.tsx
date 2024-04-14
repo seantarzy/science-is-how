@@ -6,6 +6,11 @@ import Dog2 from "../../../../assets/dog-2.png";
 import Dog3 from "../../../../assets/dog-3.png";
 
 type PetSet = "Cat" | "Dog" | "Both" | "Neither";
+
+function PetImg({ src, alt }: { src: string, alt?: string}) {
+  return <img src={src} alt={alt} className="md:w-32 md:h-32 w-16 h-16" />;
+}
+
 export default function PetSet({ set }: { set: PetSet }) {
   return (
     <div className="flex justify-center items-center">
@@ -13,26 +18,26 @@ export default function PetSet({ set }: { set: PetSet }) {
         <div className="flex gap-2 items-center">
           {set === "Cat" && (
             <>
-              <img src={Cat1} alt="Cat 1" className="w-32 h-32" />
-              <img src={Cat2} alt="Cat 2" className="w-32 h-32" />
-              <img src={Cat3} alt="Cat 3" className="w-32 h-32" />
+                <PetImg src={Cat1} alt="Cat 1" />
+                <PetImg src={Cat2} alt="Cat 2" />
+                <PetImg src={Cat3} alt="Cat 3" />
             </>
           )}
           {set === "Dog" && (
             <>
-              <img src={Dog1} alt="Dog 1" className="w-32 h-32" />
-              <img src={Dog2} alt="Dog 2" className="w-32 h-32" />
-              <img src={Dog3} alt="Dog 3" className="w-32 h-32" />
+                <PetImg src={Dog1} alt="Dog 1" />
+                <PetImg src={Dog2} alt="Dog 2" />
+                <PetImg src={Dog3} alt="Dog 3" />
             </>
           )}
           {set === "Both" && (
             <>
-              <img src={Cat1} alt="Cat 1" className="w-32 h-32" />
-              <img src={Cat2} alt="Cat 2" className="w-32 h-32" />
-              <img src={Cat3} alt="Cat 3" className="w-32 h-32" />
-              <img src={Dog1} alt="Dog 1" className="w-32 h-32" />
-              <img src={Dog2} alt="Dog 2" className="w-32 h-32" />
-              <img src={Dog3} alt="Dog 3" className="w-32 h-32" />
+                <PetImg src={Cat1} alt="Cat 1" />
+                <PetImg src={Cat2} alt="Cat 2" />
+                <PetImg src={Cat3} alt="Cat 3" />
+                <PetImg src={Dog1} alt="Dog 1" />
+                <PetImg src={Dog2} alt="Dog 2" />
+                <PetImg src={Dog3} alt="Dog 3" />
             </>
           )}
         </div>

@@ -1,9 +1,10 @@
+import { useIsMobile } from "../useIsMobile";
 import "./StickFigure.css";
 
 
 function SpeakBubble({speakBubble}: {speakBubble: string}) {
 
-  return <div>
+  return <div className="bubble-wrapper">
     <p
     className="bubble speech"
     >
@@ -23,11 +24,12 @@ export function StickFigure({
   speakBubble?: string;
   size?: number;
 }) {
-  const scaleStyle = { transform: `scale(${size})`, width: 170 * size};
-
+  const isMobile = useIsMobile();
+  const mobileAdjustedSize = isMobile ? size * 0.5 : size;
+  const scaleStyle = { transform: `scale(${mobileAdjustedSize})`, width: 170 * mobileAdjustedSize};
   return (
-    <div className={`flex align-bottom `}>
-      <div className="wrapper top-36" style={scaleStyle}>
+    <div className={`flex align-top md:align-bottom w-24 md:w-auto `}>
+      <div className="wrapper md:top-36" style={scaleStyle}>
         <div className="head">
 
         {beard && <div className="beard"></div>}

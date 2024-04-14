@@ -78,7 +78,7 @@ export default function SetsBasic() {
         <code>{`{1, 2, 3}`}</code> to denote a set with elements 1, 2, and 3.
       </p>
       <br />
-      <div className="h-72">
+      <div className="h-auto md:h-64">
 
       {miniSteps[currentMiniStep]({})}
       </div>
