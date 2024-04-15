@@ -2,7 +2,6 @@ import { FC, useState } from "react";
 import PetSet from "../components/Set/PetSet";
 import Button from "../../../shared/components/Button";
 import { Fade } from "react-awesome-reveal";
-import { useIsMobile } from "../components/useIsMobile";
 
 function PlaceHolder() {
   return (
