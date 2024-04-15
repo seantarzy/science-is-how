@@ -8,7 +8,7 @@ import Dog3 from "../../../../assets/dog-3.png";
 type PetSet = "Cat" | "Dog" | "Both" | "Neither";
 
 function PetImg({ src, alt }: { src: string, alt?: string}) {
-  return <img src={src} alt={alt} className="md:w-32 md:h-32 w-16 h-16" />;
+  return <img src={src} alt={alt} className="md:w-32 md:h-28 w-16 h-16" />;
 }
 
 export default function PetSet({ set }: { set: PetSet }) {
