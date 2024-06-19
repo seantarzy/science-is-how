@@ -36,7 +36,7 @@ export default function EPR() {
       <img
         src={SpookyAction}
         alt="Spooky Action"
-        className="w-1/4 h-[25%] mx-auto"
+        className="w-1/4 h-1/5 mx-auto"
       />
     </div>
   );

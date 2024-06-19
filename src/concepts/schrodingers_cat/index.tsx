@@ -20,7 +20,7 @@ export function SchrodingersCat() {
       <br />
 
       <br />
-      <img src={CatInBox} alt="Cat in a Box" className="w-1/4 mx-auto" />
+      <img src={CatInBox} alt="Cat in a Box" className="w-1/5 mx-auto" />
     </div>
   );
 }

@@ -26,7 +26,7 @@ export default function CatAnologyInformative() {
       <img
         src={SchrodingersCatExperiment}
         alt="Cat in a Box"
-        className="w-1/4 mx-auto"
+        className="w-1/5 mx-auto"
       />
     </div>
   );

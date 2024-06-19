@@ -42,7 +42,7 @@ const BaseLayout = ({ concept }: { concept: string }) => {
       </a>
       <div className="flex justify-center mt-4"></div>
       <div className="mt-4 flex flex-col gap-8 items-center h-full min-h-[100vh] text-center">
-        <div className="h-96 md:min-h-[450px] md:max-h-700px flex flex-col w-full mt-16 overflow-scroll md:overflow-visible">
+        <div className="h-96 md:min-h-[450px] md:h-[520px] md:max-h-700px flex flex-col w-full mt-16 overflow-scroll">
           <Fade duration={OUTLET_FADE_DURATION} key={`${concept}--${step}`}>
             <Outlet />
           </Fade>
