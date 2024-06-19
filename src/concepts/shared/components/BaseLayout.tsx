@@ -4,7 +4,7 @@ import "./BaseLayout.css";
 import { Fade } from "react-awesome-reveal";
 const stepLengthMap: Record<string, number> = {
   "russels-paradox": 5,
-  "schrodingers-cat": 4
+  "schrodingers-cat": 5
 };
 
 import AtomLogo from "../../../assets/atom-logo.png";

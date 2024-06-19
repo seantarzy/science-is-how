@@ -1,3 +1,4 @@
+import SpookyAction from "../../../assets/spooky-action.png";
 export default function EPR() {
   return (
     <div className="w-full">
@@ -30,6 +31,9 @@ export default function EPR() {
         prompting a correspondence with Einstein to further explore these
         concepts.
       </p>
+      <br />
+      <br />
+      <img src={SpookyAction} alt="Spooky Action" className="w-1/4 mx-auto" />
     </div>
   );
 }

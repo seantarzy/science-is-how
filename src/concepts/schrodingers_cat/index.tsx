@@ -1,3 +1,4 @@
+import CatInBox from "../../assets/cat-in-box.png";
 export function SchrodingersCat() {
   return (
     <div className="w-full">
@@ -15,6 +16,11 @@ export function SchrodingersCat() {
         the cat is in a superposition of being both alive and dead until the box
         is opened and the cat is observed.
       </p>
+
+      <br />
+
+      <br />
+      <img src={CatInBox} alt="Cat in a Box" className="w-1/4 mx-auto" />
     </div>
   );
 }

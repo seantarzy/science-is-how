@@ -1,3 +1,4 @@
+import SchrodingersCatExperiment from "../../../assets/schrodingers-cat-experiment.png";
 export default function CatAnologyInformative() {
   return (
     <div className="w-full">
@@ -17,6 +18,16 @@ export default function CatAnologyInformative() {
         means that the cat is also in a superposition of alive and dead states
         until the box is opened and the cat is observed.
       </p>
+
+      <br />
+
+      <br />
+
+      <img
+        src={SchrodingersCatExperiment}
+        alt="Cat in a Box"
+        className="w-1/4 mx-auto"
+      />
     </div>
   );
 }

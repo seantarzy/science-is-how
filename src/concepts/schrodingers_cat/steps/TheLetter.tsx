@@ -1,3 +1,5 @@
+import Einstein from "../../../assets/einstein.png";
+import Schrodinger from "../../../assets/schrodinger.png";
 export default function TheLetter() {
   // about the letter between Einstein and Schrödinger
   // where Einstein talked about gunpowder being both exploded and unexploded
@@ -32,6 +34,12 @@ export default function TheLetter() {
         This lead Schrodinger to illustrate further. Describing a superposition
         sitation involving a cat an some poison.
       </p>
+      <br />
+      <br />
+      <div className="flex gap-24 justify-center">
+        <img src={Einstein} alt="Einstein" className="w-[10%] h-[10%]" />
+        <img src={Schrodinger} alt="Schrodinger" className="w-[8%] h-[8%]" />
+      </div>
     </div>
   );
 }

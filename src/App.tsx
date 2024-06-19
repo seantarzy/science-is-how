@@ -6,12 +6,13 @@ import {
   NonSelfContainingSets,
   BarberExample,
 } from "./concepts/russels_paradox/steps";
-import { SchrodingersCat } from "./concepts/schrodingers_cat/Index";
+import { SchrodingersCat } from "./concepts/schrodingers_cat";
 import {
   TheLetter,
   EPR,
   CatAnologyInformative,
-  CatAnalogyInteractive
+  CatAnalogyInteractive,
+  Qbits
 } from "./concepts/schrodingers_cat/steps";
 import { RusselsParadox } from "./concepts/russels_paradox";
 import Home from "./basic/components/Home";
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="2" element={<TheLetter />} />
           <Route path="3" element={<CatAnologyInformative />} />
           <Route path="4" element={<CatAnalogyInteractive />} />
+          <Route path="5" element={<Qbits />} />
         </Route>
       </Routes>
     </Router>
