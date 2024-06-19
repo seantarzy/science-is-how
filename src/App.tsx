@@ -6,11 +6,12 @@ import {
   NonSelfContainingSets,
   BarberExample,
 } from "./concepts/russels_paradox/steps";
+import { SchrodingersCat } from "./concepts/schrodingers_cat/Index";
+import { TheLetter } from "./concepts/schrodingers_cat/steps";
 import { RusselsParadox } from "./concepts/russels_paradox";
 import Home from "./basic/components/Home";
 import About from "./basic/components/About";
 import TheSetParadox from "./concepts/russels_paradox/steps/TheSetParadox";
-
 
 export default function App() {
   return (
@@ -26,9 +27,16 @@ export default function App() {
           <Route path="1" element={<SetsBasic />} />
           <Route path="2" element={<SelfContainingSets />} />
           <Route path="3" element={<NonSelfContainingSets />} />
-          <Route path="4" element = {<TheSetParadox/>} />
+          <Route path="4" element={<TheSetParadox />} />
           <Route path="5" element={<BarberExample />} />
-        </Route> 
+        </Route>
+        <Route
+          path="/schrödingers-cat"
+          element={<BaseLayout concept="Schrödinger's Cat" />}
+        >
+          <Route index element={<SchrodingersCat />} />
+          <Route path="1" element={<TheLetter />} />
+        </Route>
       </Routes>
     </Router>
   );
