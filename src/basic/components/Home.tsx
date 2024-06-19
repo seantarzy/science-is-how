@@ -43,7 +43,7 @@ export default function Home() {
           {/* Schrödinger's Cat */}
           <Button
             onClick={() => {
-              window.location.href = "/schrödingers-cat";
+              window.location.href = "/schrodingers-cat";
             }}
           >
             <span>Schrödinger's Cat</span>

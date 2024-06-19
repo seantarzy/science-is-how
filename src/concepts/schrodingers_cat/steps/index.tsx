@@ -1,3 +1,6 @@
-import { TheLetter } from "./TheLetter";
-
-export { TheLetter };
+import TheLetter from "./TheLetter";
+import EPR from "./EPR";
+import CatAnologyInformative from "./CatAnalogyInformative";
+import CatAnalogyInteractive from "./CatAnalogyInteractive";
+// eslint-disable-next-line react-refresh/only-export-components
+export { TheLetter, EPR, CatAnologyInformative, CatAnalogyInteractive };

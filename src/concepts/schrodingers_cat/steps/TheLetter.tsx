@@ -1,4 +1,4 @@
-export function TheLetter() {
+export default function TheLetter() {
   // about the letter between Einstein and Schrödinger
   // where Einstein talked about gunpowder being both exploded and unexploded
 
@@ -8,22 +8,29 @@ export function TheLetter() {
       <br />
       <br />
       <p>
-        In 1935, Erwin Schrödinger wrote a letter to Albert Einstein in which he
-        discussed the implications of quantum mechanics. In the letter,
-        Schrödinger described a thought experiment that would later become known
-        as Schrödinger's Cat. The experiment was designed to illustrate the
-        paradoxical nature of quantum mechanics and the concept of
-        superposition.
+        After the EPR paper. Schrödinger, then at Oxford, wrote to Einstein
+        expressing his interest and appreciation for the paper, which challenged
+        the completeness of quantum mechanics.
       </p>
-      <br />
       <p>
-        In the experiment, a cat is placed in a sealed box with a radioactive
-        atom, a Geiger counter, a hammer, and a vial of poison. If the Geiger
-        counter detects radiation, the hammer will break the vial of poison,
-        killing the cat. If the Geiger counter does not detect radiation, the
-        cat will remain alive. According to quantum mechanics, the cat is in a
-        superposition of being both alive and dead until the box is opened and
-        the cat is observed.
+        Throughout their letters, Einstein and Schrödinger discussed the
+        implications of the EPR paradox and the idea of superposition. Einstein
+        used analogies, such as a ball in a box, to illustrate his views on
+        quantum mechanics, emphasizing his belief in a complete description of
+        physical reality.
+      </p>
+      <p>
+        Einstein then posited a thought experiment involving a box of gunpowder.
+        If the gunpowder can spontaneously combust, then by quantum mechanic
+        principles, the gunpowder is both exploded and unexploded until
+        observed. However, "In reality here is just no intermediary between
+        exploded and not-exploded...My solution of the paradox presented in our
+        work is this. The ψ function does not describe a state of one system,
+        rather (statistically) an ensemble of systems."
+      </p>
+      <p>
+        This lead Schrodinger to illustrate further. Describing a superposition
+        sitation involving a cat an some poison.
       </p>
     </div>
   );
