@@ -90,7 +90,7 @@ export default function CatAnalogyInteractive() {
             className={`box-image ${catState}`}
           />
         </div>
-        <div className="cat">
+        <div className="cat relative">
           {
             {
               alive: <PartyCatImage />,
